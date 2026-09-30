@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower keen &mdash; Fresh Flowers &amp; Bouquets Delivery</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 7.5a4.5 4.5 0 1 1 4.5 4.5M12 7.5A4.5 4.5 0 1 0 7.5 12M12 7.5V12m4.5 0a4.5 4.5 0 1 1-4.5 4.5M16.5 12H12m-4.5 0a4.5 4.5 0 1 0 4.5 4.5M7.5 12H12m0 4.5V21"/>
+            </svg>
+            <span>Flower keen</span>
+        </div>
+
+        <nav aria-label="Main Navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#catalog">Catalog</a></li>
+                <li><a href="#blog">Flower Care</a></li>
+                <li><a href="#custom-order">Flower Quiz</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#account">Sign In</a></li>
+            </ul>
+        </nav>
+
+        <div class="search-box">
+            <form action="/search" method="GET" role="search">
+                <input type="search" name="q" placeholder="Search roses, peonies..." aria-label="Search flowers">
+             
+                <button type="submit" aria-label="Search button">&#128269;</button>
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1>Fresh &amp; Aesthetic Blooms for Every Moment</h1>
+                <p>Hand-crafted seasonal bouquets delivered straight to your doorstep with love and care.</p>
+                
+                <a href="#catalog" class="cta-button">Explore Catalog &rarr;</a>
+            </div>
+
+            <div class="hero-image">
+                <img src="image/v.jpg" alt="Aesthetic pastel flower bouquet in hands" width="400" height="620">
+            </div>
+        </section>
+
+        <section id="catalog" class="cards-section">
+            <h2>Best Selling Bouquets</h2>
+            <p class="section-subtitle">Our most popular floral arrangements made fresh daily.</p>
+
+            <div class="card-grid">
+                <article class="card">
+                    <img src="image/x.jpg" alt="Blush Symphony rosa bouquet" width="320" height="350">
+                    <div class="card-body">
+                        <h3>Blush Symphony</h3>
+                        <p>A wonderful white rose "Amanda".</p>
+                        <span class="price">$45.00</span>
+                        <a href="#order-1" class="order-link">Order now &raquo;</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="image/z.jpg" alt="Sunny Day spring bouquet" width="320" height="350">
+                    <div class="card-body">
+                        <h3>Morning Dew</h3>
+                        <p>Vibrant combination of white hydrangeas, lisianthus, and fresh greenery for bright days.</p>
+                        <span class="price">$22.00</span>
+                        <a href="#order-2" class="order-link">Order now &raquo;</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="image/baner.jpg" alt="Lavender Sunset arrangement" width="320" height="350">
+                    <div class="card-body">
+                        <h3>Lavender Whisper</h3>
+                        <p>A calming floral arrangement featuring purple hydrangeas, lavender sprigs, and carnations.</p>
+                        <span class="price">$40.00</span>
+                        <a href="#order-3" class="order-link">Order now &raquo;</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="blog" class="news-section">
+            <h2>Florist's Journal &amp; Tips</h2>
+
+            <article class="news-item">
+                <header>
+                    <h3>5 Simple Secrets to Make Cut Flowers Last Twice as Long</h3>
+                    <time datetime="2026-09-18">September 18, 2026</time> &bull; <span>Author: Head Florist</span>
+                </header>
+                <img src="image/s.jpg" alt="Florist trimming flower stems with pruners" width="400" height="360">
+                <p>Keeping flowers fresh at home is an art! Always cut stems at a 45-degree angle under cool water, clean your vase thoroughly with warm soapy water, and ensure leaves do not touch the water to prevent bacteria growth...</p>
+                <a href="#read-more">Read full guide</a>
+            </article>
+
+            <article class="news-item">
+                <header>
+                    <h3>Choosing the Meaningful Flower Palette for Autumn</h3>
+                    <time datetime="2026-09-12">September 12, 2026</time> &bull; <span>Author: Flower keen Studio</span>
+                </header>
+                <p>As the weather cools, rich terracotta, burnt orange, and deep burgundies bring coziness and emotional warmth. Discover which seasonal blooms suit your romantic date or festive anniversary dinner...</p>
+                <a href="#read-more">Read full guide</a>
+            </article>
+        </section>
+
+        <section id="custom-order" class="survey-section">
+            <h2>Floral Preference Questionnaire</h2>
+            <p>Tell us your bouquet preferences, and our florist will personalize a design for you.</p>
+
+            <form action="/survey-submit" method="POST" class="form-container">
+                <div class="form-group">
+                    <label for="survey-user">Your Nickname / Login:</label>
+                    <input type="text" id="survey-user" name="username" placeholder="e.g. flower_lover" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="survey-email">Your Email Address:</label>
+                    <input type="email" id="survey-email" name="user_email" placeholder="client@domain.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="survey-occasion">Occasion for the flowers:</label>
+                    <select id="survey-occasion" name="occasion">
+                        <option value="birthday" selected>Birthday Celebration</option> 
+                        <option value="anniversary">Romantic Anniversary</option>
+                        <option value="wedding">Wedding / Bridal</option>
+                        <option value="gratitude">Thank You / Appreciation</option>
+                        <option value="just_because">Just Because / Home Decor</option>
+                    </select>
+                </div>
+
+                <fieldset class="form-group">
+                    <legend>Preferred Delivery Method:</legend>
+                    <label>
+                        <input type="radio" name="delivery_type" value="courier" checked>
+                        Courier direct to doorstep
+                    </label>
+                    <label>
+                        <input type="radio" name="delivery_type" value="pickup">
+                        Self-pickup from Flower keen studio
+                    </label>
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <legend>Desired Bouquet Size:</legend>
+                    <label>
+                        <input type="radio" name="size" value="mini">
+                        Mini Petite ($25 - $35)
+                    </label>
+                    <label>
+                        <input type="radio" name="size" value="standard" checked>
+                        Standard Chic ($40 - $60)
+                    </label>
+                    <label>
+                        <input type="radio" name="size" value="deluxe">
+                        Grand Deluxe ($70+)
+                    </label>
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <legend>Which flowers do you adore? (Select multiple):</legend>
+                    <label>
+                        <input type="checkbox" name="flower_choice" value="peonies" checked>
+                        Peonies
+                    </label>
+                    <label>
+                        <input type="checkbox" name="flower_choice" value="roses" checked>
+                        Garden Roses
+                    </label>
+                    <label>
+                        <input type="checkbox" name="flower_choice" value="hydrangeas">
+                        Hydrangeas
+                    </label>
+                    <label>
+                        <input type="checkbox" name="flower_choice" value="tulips">
+                        Dutch Tulips
+                    </label>
+                    <label>
+                        <input type="checkbox" name="flower_choice" value="eucalyptus">
+                        Eucalyptus &amp; Dried Florals
+                    </label>
+                </fieldset>
+
+                <div class="form-buttons">
+                    <button type="submit">Submit Preferences</button>
+                    <button type="reset">Clear Form</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <p>Have questions about flower availability? Drop us a line.</p>
+
+            <form action="/contact-us" method="POST" class="form-container">
+                <div class="form-group">
+                    <label for="contact-name">Customer Name:</label>
+                    <input type="text" id="contact-name" name="name" placeholder="Anna Miller" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-email">Email:</label>
+                    <input type="email" id="contact-email" name="email" placeholder="anna@example.com" required>
+                </div>
+               
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <section id="account" class="auth-section">
+            <h2>Customer Account</h2>
+
+            <div class="auth-box">
+                <h3>Sign In to Your Account</h3>
+                <form action="/login" method="POST">
+                    <div class="form-group">
+                        <label for="login-email">Email address:</label>
+                        <input type="email" id="login-email" name="login_email" placeholder="you@domain.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="login-pass">Password:</label>
+                        <input type="password" id="login-pass" name="login_pass" minlength="8" placeholder="Enter password" required>
+                        <small>Hint: Password length must be at least 8 characters.</small>
+                    </div>
+
+                    <div class="form-buttons">
+                        <button type="submit">Sign In</button>
+                        <button type="reset">Clear</button>
+                    </div>
+                </form>
+            </div>
+
+            <hr>
+
+            <div class="auth-box">
+                <h3>Create New Client Account</h3>
+                <form action="/register" method="POST">
+                    <div class="form-group">
+                        <label for="reg-email">Email address:</label>
+                        <input type="email" id="reg-email" name="reg_email" placeholder="you@domain.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reg-pass">Password:</label>
+                        <input type="password" id="reg-pass" name="reg_pass" minlength="8" placeholder="Create password" required>
+                        <small>Hint: Minimum 8 characters (letters and numbers).</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reg-pass-repeat">Confirm Password:</label>
+                        <input type="password" id="reg-pass-repeat" name="reg_pass_repeat" minlength="8" placeholder="Repeat your password" required>
+                    </div>
+
+                    <div class="form-buttons">
+                        <button type="submit">Create Account</button>
+                        <button type="reset">Clear</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Flower keen Studio. All rights reserved.</p>
+        <p>Aesthetic floral shop &bull; <a href="#home">Back to top &uarr;</a></p>
+    </footer>
+
+</body>
+</html>
