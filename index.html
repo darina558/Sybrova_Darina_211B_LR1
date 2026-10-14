@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flower keen &mdash; Fresh Flowers &amp; Bouquets Delivery</title>
-
+    <link rel="stylesheet" href="css/css1.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
     <header>
         <div class="logo">
-            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 7.5a4.5 4.5 0 1 1 4.5 4.5M12 7.5A4.5 4.5 0 1 0 7.5 12M12 7.5V12m4.5 0a4.5 4.5 0 1 1-4.5 4.5M16.5 12H12m-4.5 0a4.5 4.5 0 1 0 4.5 4.5M7.5 12H12m0 4.5V21"/>
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                    d="M12 7.5a4.5 4.5 0 1 1 4.5 4.5M12 7.5A4.5 4.5 0 1 0 7.5 12M12 7.5V12m4.5 0a4.5 4.5 0 1 1-4.5 4.5M16.5 12H12m-4.5 0a4.5 4.5 0 1 0 4.5 4.5M7.5 12H12m0 4.5V21" />
             </svg>
             <span>Flower keen</span>
         </div>
@@ -24,7 +30,17 @@
         <nav aria-label="Main Navigation">
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#catalog">Catalog</a></li>
+                <li>
+                    <div class="dropdown">
+                        <a href="#catalog">Catalog</a>
+                        <div class="dropdown-content">
+                            <a href="#catalog">Best Sellers</a>
+                            <a href="#catalog">Seasonal Bouquets</a>
+                            <a href="#catalog">Custom Orders</a>
+                        </div>
+                    </div>
+
+                </li>
                 <li><a href="#blog">Flower Care</a></li>
                 <li><a href="#custom-order">Flower Quiz</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -35,7 +51,7 @@
         <div class="search-box">
             <form action="/search" method="GET" role="search">
                 <input type="search" name="q" placeholder="Search roses, peonies..." aria-label="Search flowers">
-             
+
                 <button type="submit" aria-label="Search button">&#128269;</button>
             </form>
         </div>
@@ -46,7 +62,7 @@
             <div class="hero-content">
                 <h1>Fresh &amp; Aesthetic Blooms for Every Moment</h1>
                 <p>Hand-crafted seasonal bouquets delivered straight to your doorstep with love and care.</p>
-                
+
                 <a href="#catalog" class="cta-button">Explore Catalog &rarr;</a>
             </div>
 
@@ -84,7 +100,8 @@
                     <img src="image/baner.jpg" alt="Lavender Sunset arrangement" width="320" height="350">
                     <div class="card-body">
                         <h3>Lavender Whisper</h3>
-                        <p>A calming floral arrangement featuring purple hydrangeas, lavender sprigs, and carnations.</p>
+                        <p>A calming floral arrangement featuring purple hydrangeas, lavender sprigs, and carnations.
+                        </p>
                         <span class="price">$40.00</span>
                         <a href="#order-3" class="order-link">Order now &raquo;</a>
                     </div>
@@ -100,8 +117,16 @@
                     <h3>5 Simple Secrets to Make Cut Flowers Last Twice as Long</h3>
                     <time datetime="2026-09-18">September 18, 2026</time> &bull; <span>Author: Head Florist</span>
                 </header>
+
+<div class="image-example">
                 <img src="image/s.jpg" alt="Florist trimming flower stems with pruners" width="400" height="360">
-                <p>Keeping flowers fresh at home is an art! Always cut stems at a 45-degree angle under cool water, clean your vase thoroughly with warm soapy water, and ensure leaves do not touch the water to prevent bacteria growth...</p>
+    <p>Florist trimming flower stems with pruners</p>
+</div>
+                
+                
+                <p>Keeping flowers fresh at home is an art! Always cut stems at a 45-degree angle under cool water,
+                    clean your vase thoroughly with warm soapy water, and ensure leaves do not touch the water to
+                    prevent bacteria growth...</p>
                 <a href="#read-more">Read full guide</a>
             </article>
 
@@ -110,7 +135,8 @@
                     <h3>Choosing the Meaningful Flower Palette for Autumn</h3>
                     <time datetime="2026-09-12">September 12, 2026</time> &bull; <span>Author: Flower keen Studio</span>
                 </header>
-                <p>As the weather cools, rich terracotta, burnt orange, and deep burgundies bring coziness and emotional warmth. Discover which seasonal blooms suit your romantic date or festive anniversary dinner...</p>
+                <p>As the weather cools, rich terracotta, burnt orange, and deep burgundies bring coziness and emotional
+                    warmth. Discover which seasonal blooms suit your romantic date or festive anniversary dinner...</p>
                 <a href="#read-more">Read full guide</a>
             </article>
         </section>
@@ -133,7 +159,7 @@
                 <div class="form-group">
                     <label for="survey-occasion">Occasion for the flowers:</label>
                     <select id="survey-occasion" name="occasion">
-                        <option value="birthday" selected>Birthday Celebration</option> 
+                        <option value="birthday" selected>Birthday Celebration</option>
                         <option value="anniversary">Romantic Anniversary</option>
                         <option value="wedding">Wedding / Bridal</option>
                         <option value="gratitude">Thank You / Appreciation</option>
@@ -213,7 +239,7 @@
                     <label for="contact-email">Email:</label>
                     <input type="email" id="contact-email" name="email" placeholder="anna@example.com" required>
                 </div>
-               
+
                 <button type="submit">Send Message</button>
             </form>
         </section>
@@ -231,7 +257,8 @@
 
                     <div class="form-group">
                         <label for="login-pass">Password:</label>
-                        <input type="password" id="login-pass" name="login_pass" minlength="8" placeholder="Enter password" required>
+                        <input type="password" id="login-pass" name="login_pass" minlength="8"
+                            placeholder="Enter password" required>
                         <small>Hint: Password length must be at least 8 characters.</small>
                     </div>
 
@@ -254,13 +281,15 @@
 
                     <div class="form-group">
                         <label for="reg-pass">Password:</label>
-                        <input type="password" id="reg-pass" name="reg_pass" minlength="8" placeholder="Create password" required>
+                        <input type="password" id="reg-pass" name="reg_pass" minlength="8" placeholder="Create password"
+                            required>
                         <small>Hint: Minimum 8 characters (letters and numbers).</small>
                     </div>
 
                     <div class="form-group">
                         <label for="reg-pass-repeat">Confirm Password:</label>
-                        <input type="password" id="reg-pass-repeat" name="reg_pass_repeat" minlength="8" placeholder="Repeat your password" required>
+                        <input type="password" id="reg-pass-repeat" name="reg_pass_repeat" minlength="8"
+                            placeholder="Repeat your password" required>
                     </div>
 
                     <div class="form-buttons">
@@ -272,10 +301,13 @@
         </section>
     </main>
 
+    <a href="#home" id="back-to-top">Back to top &uarr;</a>
+
     <footer>
         <p>&copy; 2026 Flower keen Studio. All rights reserved.</p>
-        <p>Aesthetic floral shop &bull; <a href="#home">Back to top &uarr;</a></p>
+        <p>Aesthetic floral shop &bull; </p>
     </footer>
 
 </body>
+
 </html>
